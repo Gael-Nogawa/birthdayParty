@@ -1,0 +1,16 @@
+{
+  "name": "m22-landing-page-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/script/main.js src/styles/main.scss src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gael Eiji Nogawa",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3"
+  }
+}
