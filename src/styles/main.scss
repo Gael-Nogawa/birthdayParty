@@ -1,0 +1,47 @@
+@use 'variables';
+@use 'hero';
+@use 'appertizers';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    color: variables.$textColor;
+    list-style: none;
+
+}
+
+.text--bigger{
+    font-size: 2em;
+    line-height: 56px;
+}
+
+.text {
+    font-size: 1.5em;
+    line-height: 40px;
+}
+
+.text--smaller {
+    font-size: 1.2em;
+    line-height: 32px;
+}
+.container {
+
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: variables.$bgColor;
+
+    .material-symbols-outlined {
+        font-family: 'Material Symbols Outlined';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: normal;  
+        color: variables.$textColor; 
+        
+        &:first-child {
+            font-size: 24px;
+        }
+    }
+}
