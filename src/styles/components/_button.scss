@@ -1,0 +1,22 @@
+@use '../variables';
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 16px;
+    white-space: nowrap;
+    
+
+    &--primary{
+        color: variables.$textColor;
+        background-color: variables.$btnColor;
+
+        &:hover {
+            background-color: darken(variables.$btnColorSecond, 5%);
+        }
+    }
+}

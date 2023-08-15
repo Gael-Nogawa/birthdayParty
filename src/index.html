@@ -7,11 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/main.scss">
-
-    <style>
-        
-    </style>
 
     <title>Birthday party</title>
 </head>
@@ -19,33 +16,36 @@
 
     <header class="hero">
         <div class="container">
-            <img class="hero__foto" src="./images/20220413_174501.jpg" alt="Pessoas comemorando">
             <p class="hero__text text--bigger">
                 <span class="material-symbols-outlined">
                     tag
                 </span>
-                Venha fazer parte da minha party!
+                Venha pra minha party!
                 <br />
                 O evento acontecerá em:
                 <br />
                 <span id="contador-de-dias">data do niver</span>
             </p>
 
-            <div class="hero__infos">
-                <ul class="hero__infos__list">
-                    <li class="hero__infos__list__item text">
-                        <b>Localização: </b>
+            <div class="infos">
+                <ul class="infos__list">
+                    <li class="infos__list__item text">
+                        <b class="text">Localização: </b>
                         Cháraca Primavera
                     </li>
-                    <li class="hero__infos__list__item text">
-                        <b>Levar:</b>
+                    <li class="infos__list__item text">
+                        <b class="text">Levar:</b>
                         Kit-churras
                     </li>
-                    <li class="hero__infos__list__item text">
-                        <b>Quando: </b>
+                    <li class="infos__list__item text">
+                        <b class="text">Quando: </b>
                         28/03/2023 às 11:00hrs
                     </li>
                 </ul>
+                
+                <a href="#" class="btn btn--primary">
+                    <span class="text"> Tô dentro!</span>
+                </a>
             </div>
             
             <!-- Chácara -->
@@ -68,96 +68,112 @@
         </div>
     </header>
 
-    <section class="container event event--appetizers ">
-        <div class="event__details text">
+    <section class="event   event--appetizers">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details text">
            
-            <h2 class="event__details__title">Bebidas, drinks e comida maravilhosa</h2>
-            <span class="material-symbols-outlined">
-                lunch_dining
-            </span>
-            <span class="material-symbols-outlined">
-                sports_bar
-            </span>
-            <span class="material-symbols-outlined">
-                local_bar
-            </span>
-
-            <p class="event__details__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eius a voluptatum in, itaque cumque doloremque amet quis voluptas officia delectus non laudantium, iure cupiditate maiores labore ea autem quod?
-            </p>
-            
+                <h2 class="event__details__title">Bebidas, drinks e comida maravilhosa</h2>
+                <span class="material-symbols-outlined">
+                    lunch_dining
+                </span>
+                <span class="material-symbols-outlined">
+                    sports_bar
+                </span>
+                <span class="material-symbols-outlined">
+                    local_bar
+                </span>
+    
+                <p class="event__details__description text--smaller">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eius a voluptatum in, itaque cumque doloremque amet quis voluptas officia delectus non laudantium, iure cupiditate maiores labore ea autem quod?
+                </p>
+                
+            </div>
+            <img class="event__img" src="./images/bebidas.jpg" alt="Bebidas, drinks e uma comida maravilhosa">
         </div>
-       
-        <img class="event__img" src="./images/bebidas.jpg" alt="Bebidas, drinks e uma comida maravilhosa">
 
     </section>
 
-    <section class="container event event--baralho">
-        <div class="event__details text">
+    <section class="event  event--sinuca event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details text">
            
-            <h2 class="event__details__title">Jogos, sinuca, e um lugar para descansar</h2>
-            <span class="material-symbols-outlined">
-                sports_esports
-            </span>
-            <span class="material-symbols-outlined">
-                casino
-            </span>
-            <span class="material-symbols-outlined">
-                pace
-            </span>
-            <p class="event__details__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eius a voluptatum in, itaque cumque doloremque amet quis voluptas officia delectus non laudantium, iure cupiditate maiores labore ea autem quod?
-            </p>
+                <h2 class="event__details__title">Jogos, sinuca, e um lugar para descansar</h2>
+                <span class="material-symbols-outlined">
+                    sports_esports
+                </span>
+                <span class="material-symbols-outlined">
+                    casino
+                </span>
+                <span class="material-symbols-outlined">
+                    pace
+                </span>
+                
+                <p class="event__details__description text--smaller">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eius a voluptatum in, itaque cumque doloremque amet quis voluptas officia delectus non laudantium, iure cupiditate maiores labore ea autem quod?
+                </p>
+                
+            </div>
+            <img class="event__img" src="./images/sinuca.jpg" alt="Sinuca, jogos, lugar para descanso">
+        </div>
+
+    </section>
+
+    <section class="event   event--pool">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details text">
+                <h2 class="event__details__title">Piscinha, pra relaxar! =)</h2>
+                <span class="material-symbols-outlined">
+                    pool
+                </span>   
+                <span class="material-symbols-outlined">
+                    eyeglasses
+                </span> 
+                <span class="material-symbols-outlined">
+                    sports_volleyball
+                </span>
+                <p class="event__details__description text--smaller"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempora amet assumenda impedit esse accusantium a quidem dolore voluptatem, adipisci odit atque odio? Libero omnis eaque placeat suscipit voluptate enim!
+                </p>
+            </div>
             
+            <img class="event__img" src="./images/pool-party.jpg" alt="Piscina pra curtir"/>
         </div>
-       
-        <img class="event__img" src="./images/baralho.jpg" alt="Bebidas, drinks e uma comida maravilhosa">
+
 
     </section>
 
-    <section class="container event event--band">
-        <div class="event__details text">
+    <section class="event   event--band event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details text">
             
-            <h2 class="event__details__title">Banda</h2>
-            <span class="material-symbols-outlined">
-                play_arrow
-            </span>
-            <span class="material-symbols-outlined">
-                nightlife
-            </span>
-            <span class="material-symbols-outlined">
-                volume_down_alt
-            </span>
-            <p class="event__details__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit temporibus minus error magni facilis perferendis a dolorum earum ex possimus, corrupti omnis quasi iure minima beatae, voluptates blanditiis? Impedit, ipsum!
-            </p>
+                <h2 class="event__details__title">Banda</h2>
+                <span class="material-symbols-outlined">
+                    play_arrow
+                </span>
+                <span class="material-symbols-outlined">
+                    nightlife
+                </span>
+                <span class="material-symbols-outlined">
+                    volume_down_alt
+                </span>
+                <p class="event__details__description text--smaller">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit temporibus minus error magni facilis perferendis a dolorum earum ex possimus, corrupti omnis quasi iure minima beatae, voluptates blanditiis? Impedit, ipsum!
+                </p>
+            </div>
+            <img class="event__img" src="./images/banda.jpg" alt="Bebidas, drinks e uma comida maravilhosa">
         </div>
-        <img class="event__img" src="./images/banda.jpg" alt="Bebidas, drinks e uma comida maravilhosa">
 
     </section>
 
-    <section class="container event event--pool">
-        <div class="event__details text">
-            <h2 class="event__details__title">E pra finalizar, uma Piscininha! =)</h2>
-            <span class="material-symbols-outlined">
-                pool
-            </span>   
-            <span class="material-symbols-outlined">
-                eyeglasses
-            </span> 
-            <span class="material-symbols-outlined">
-                sports_volleyball
-            </span>
-            <p class="event__details__description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tempora amet assumenda impedit esse accusantium a quidem dolore voluptatem, adipisci odit atque odio? Libero omnis eaque placeat suscipit voluptate enim!
-            </p>
-        </div>
+    <footer class=footer>
+        <p class="footer__description text--smaller">
+            &copy;Todos os direitos reservados! 
+        </p>
+    </footer>
 
-        <img class="event__img" src="./images/pool-party.jpg" alt="Piscina pra curtir"/>
-
-    </section>
+   
 
     
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./script/main.js"></script>
 </body>
 </html>

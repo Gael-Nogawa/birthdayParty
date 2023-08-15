@@ -1,6 +1,10 @@
 @use 'variables';
 @use 'hero';
-@use 'appertizers';
+@use 'event';
+@use './components/infos';
+@use './components/button';
+@use 'footer';
+
 
 * {
     padding: 0;
@@ -13,25 +17,23 @@
 }
 
 .text--bigger{
-    font-size: 2em;
-    line-height: 56px;
+    font-size: 2.9em;
 }
 
-.text {
+.text{
     font-size: 1.5em;
-    line-height: 40px;
+ 
 }
 
-.text--smaller {
+.text--smaller{
     font-size: 1.2em;
-    line-height: 32px;
+    
 }
 .container {
 
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    background-color: variables.$bgColor;
 
     .material-symbols-outlined {
         font-family: 'Material Symbols Outlined';
@@ -44,4 +46,6 @@
             font-size: 24px;
         }
     }
+
+   
 }

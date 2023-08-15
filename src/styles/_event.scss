@@ -1,0 +1,63 @@
+@use 'variables';
+
+.event{
+   
+    .container {
+        display: flex;
+    }
+
+    &__details {
+        padding: 40px;
+        text-align: center;
+        
+        &__title{
+            padding-bottom: 16px;
+        }
+    }
+    
+    &--appetizers {
+        background-image: linear-gradient(180deg, variables.$greenLight , variables.$green);
+    }
+    &--sinuca {
+        background-image: linear-gradient(180deg, variables.$green, variables.$greenPool);
+    }
+    &--pool {
+        background-image: linear-gradient(180deg, variables.$greenPool, variables.$blue);
+    }
+    &--band {
+        background-image: linear-gradient(180deg, variables.$blue, variables.$black); 
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__img {
+        padding: 20px 10px;
+        max-width: 500px;
+        width: 100%;
+    }
+   
+    @media (max-width: 640px){
+       .container {
+            display: block;
+       }
+    }
+
+    @media (max-width: 1024px){
+        .container {
+            display: block;
+            text-align: center;
+        }
+        
+        &__img {
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+    
+}
+
+
