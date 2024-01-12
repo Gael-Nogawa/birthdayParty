@@ -14,6 +14,7 @@
     &--primary{
         color: variables.$textColor;
         background-color: variables.$btnColor;
+        transition: background-color 1s;
 
         &:hover {
             background-color: darken(variables.$btnColorSecond, 5%);
