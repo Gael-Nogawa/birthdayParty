@@ -17,7 +17,7 @@
         transition: background-color 1s;
 
         &:hover {
-            background-color: darken(variables.$btnColorSecond, 5%);
+            background-color: darken(variables.$btnColorHouver, 5%);
         }
     }
 }

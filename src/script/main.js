@@ -1,8 +1,43 @@
 AOS.init()
 
-
 window.addEventListener('DOMContentLoaded', function(){
     
+
+    const birthdayPartyEvent = new Date("Mar 28, 2024, 10:00:00");
+    const timeStampFromEvent = birthdayPartyEvent.getTime();
+
+
+    const countingHours = this.setInterval(function(){
+        
+        const now = new Date();
+        const rightNowTimeStamp = now.getTime();
+
+        const differenceTimeStamp = timeStampFromEvent - rightNowTimeStamp;
+
+        const msInDays = 1000 * 60 * 60 *24;
+        const msInHours = 1000 * 60 * 60;
+        const msInMinutes = 1000 * 60;
+        const msInSeconds = 1000;
+    
+        const daysFromEvent = Math.floor(differenceTimeStamp / msInDays);
+        const hoursFromEvent = Math.floor((differenceTimeStamp % msInDays) / msInHours);
+        const minutesFromEvent = Math.floor(differenceTimeStamp % msInHours / msInMinutes);
+        const secondsFromEvent = Math.floor(differenceTimeStamp % msInMinutes / msInSeconds);
+        
+
+        document.getElementById('contador-de-dias').innerHTML = `${daysFromEvent}d ${hoursFromEvent}h ${minutesFromEvent}m ${secondsFromEvent}s`;
+        
+        if (differenceTimeStamp < 0) {
+            clearInterval(countingHours)
+            document.getElementById('contador-de-dias').innerHTML = 'Chegou tarde... Ano que vem teremos uma festa melhor, não perca!';
+        }
+
+    }, 1000);
+
+});  
+
+    /*
+
     const niver = new Date("Mar 28, 2024, 10:00:00");
     const anoNiver = niver.getFullYear();
     const mesNiver = niver.getMonth()+1;
@@ -13,9 +48,11 @@ window.addEventListener('DOMContentLoaded', function(){
     
     const minNiver = niver.getMinutes();
     const minNiverFormatado = minNiver.toString().padStart(2, '0')
-
+    */
     
     // Recuperando o dia atual
+    
+    /*
     const hoje = new Date();
     const anoHoje = hoje.getFullYear();
     const mesHoje = hoje.getMonth()+1;
@@ -67,10 +104,10 @@ window.addEventListener('DOMContentLoaded', function(){
     const horaAteNiver = Math.floor(distanciaAteNiver / horaEmMs);
     const minAteNiver = Math.floor(distanciaAteNiver / minutoEmMs);
 
-    */
+    
 
     
     this.document.getElementById('contador-de-dias').innerHTML = `O dia será ${niver}`
+*/
 
 
-});
