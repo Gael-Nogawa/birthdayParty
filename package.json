@@ -2,19 +2,6 @@
   "name": "m22-landing-page-parcel",
   "version": "1.0.0",
   "description": "",
-<<<<<<< HEAD
-
-  "scripts": {
-    "dev": "parcel src/script/main.js src/styles/main.scss src/index.html",
-    "build": "parcel build src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Gael Eiji Nogawa",
-  "license": "ISC",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.9.3",
-    "parcel": "^2.9.3",
-=======
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html src/scripts/main.js src/styles/main.scss",
@@ -25,7 +12,6 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
     "parcel": "^2.11.0",
->>>>>>> 8c29baa (Chore: initial configuration)
     "sharp": "^0.31.3"
   }
 }
