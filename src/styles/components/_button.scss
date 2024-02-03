@@ -1,0 +1,17 @@
+.button {
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+    
+    &--primary {
+        background-color: purple;
+    }
+
+    
+}

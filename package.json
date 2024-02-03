@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html src/scripts/main.js src/styles/main.scss",
+    "dev": "parcel src/index.html src/script/main.js src/styles/main.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
