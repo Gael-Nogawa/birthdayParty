@@ -1,4 +1,4 @@
 # birthdayParty
-Bora pra minha party?
+Bora curtir? =)
 
 Working in Progress
