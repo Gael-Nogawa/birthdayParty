@@ -3,16 +3,21 @@
     justify-content: space-between;
     padding: 16px 24px;
     background-color: rgb(255, 136, 0);
-    
+    border-radius: 20px;
+
     &__infos {
         display: flex;
         gap: 130px;
         line-height: 28px;
         
-        strong {
-            font-size: 20px;
-            display: block;
+        &__details {
+            strong {
+                font-size: 20px;
+                display: block;
+            }
+            
         }
+
     }
 
     @media (max-width: 640px){
@@ -32,12 +37,10 @@
 
     @media (max-width: 1024px){
         
-        margin: 16px 24px;
-        
-        &__infos{
+        &__infos {
+            gap: 30px;
+            white-space: nowrap;
             
-            gap: 60px;
-        
         }
           
     }

@@ -4,6 +4,7 @@
     background-image: url('../images/casa.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right 10% bottom 25% ;
     position: relative;
     
     &::before {
@@ -39,6 +40,12 @@
         .container {
             max-width: 70%;
 
+        }
+    }
+
+    @media (max-width: 1024px){
+        .container {
+            max-width: 90%;
         }
     }
     

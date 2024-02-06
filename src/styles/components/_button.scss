@@ -1,5 +1,5 @@
 .button {
-    padding: 12px;
+    padding: 12px 32px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -10,8 +10,22 @@
 
     
     &--primary {
-        background-color: purple;
+        background-color:rgba(185, 29, 185, 0.409);
+        border-radius: 20px;
+        border: 2px solid;
+        border-color: #f1f1f1;
+      
+
+        &:hover {
+            border: 2px solid;
+            border-color:#f1f1f1;
+            background-color:rgb(197, 107, 4);
+            transition: 1s;
+
+           
+        }
     }
 
+   
     
 }
